@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "type": "birthday",
+            "name": "Birthday Cakes",
+            "img_url": "/products/birthday/superhero_themed.webp",
+            "description": "Make any birthday celebration special with our delicious birthday cakes! From superhero-themed cakes to classic black forest cakes, our birthday cakes are sure to delight both children and adults alike. We use only the freshest ingredients to ensure every cake is moist, flavorful and beautifully decorated. Whether you're looking for a cake for a child's party or for a milestone birthday, we have a wide range of designs and flavors to choose from. Let us make your next birthday celebration extra special with our delicious birthday cakes."
+        },
+        {
+            "type": "traditional",
+            "name": "Traditional Cakes",
+            "img_url": "/products/traditional/victoria_sponge.webp",
+            "description": "Indulge in a slice of tradition with our delicious collection of traditional cakes. From Victoria sponge to lemon drizzle cake, our traditional cakes are baked to perfection using classic recipes. We use only the finest ingredients and traditional methods to ensure that each cake has the perfect texture and flavor. Our traditional cakes are the perfect choice for any occasion, from afternoon tea to a special celebration. Let us take you on a journey of traditional taste with our delicious traditional cakes."
+        },
+        {
+            "type": "chocolate",
+            "name": "Chocolate Cakes",
+            "img_url": "/products/chocolate/chocolate_duo.webp",
+            "description": "Satisfy your chocolate cravings with our mouthwatering chocolate cakes. From chocolate duo cakes to classic chocolate fudge cakes, our chocolate cakes are rich, decadent, and sure to please any chocolate lover. Our cakes are made with the highest quality cocoa powder and chocolate to ensure an intense chocolate flavor. We also offer a variety of chocolate cakes with different filling and frosting options to suit any preference. Whether it's a special occasion or just a treat for yourself, our chocolate cakes are sure to delight your taste buds."
+        }
+    ]
+}

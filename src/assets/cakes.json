@@ -1,0 +1,220 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Black Forest",
+            "pricing": [
+                { "id": 0, "size": "S", "price": 1000 },
+                { "id": 1, "size": "M", "price": 1200 },
+                { "id": 2, "size": "L", "price": 1400 }
+            ],
+            "collection": "birthday",
+            "img_url": "/products/birthday/black_forest.webp",
+            "description": "A classic German chocolate cake with cherries and whipped cream, perfect for any celebration. The whipped cream adds a light and airy texture making it a irresistible treat for all. A perfect blend of rich chocolate and sweet cherries."
+        },
+        {
+            "id": 2,
+            "name": "Blue Ice Cream Themed",
+            "pricing": [
+                { "id": 0, "size": "S", "price": 1000 },
+                { "id": 1, "size": "M", "price": 1200 },
+                { "id": 2, "size": "L", "price": 1400 }
+            ],
+            "collection": "birthday",
+            "img_url": "/products/birthday/blue_ice_cream_themed.webp",
+            "description": "A fun and playful ice cream themed cake in shades of blue, perfect for a birthday party. The design of the cake is very detailed and realistic making it a center of attraction. Perfect for ice cream lovers."
+        },
+        {
+            "id": 3,
+            "name": "Galaxy Macaron",
+            "pricing": [
+                { "id": 0, "size": "S", "price": 1000 },
+                { "id": 1, "size": "M", "price": 1200 },
+                { "id": 2, "size": "L", "price": 1400 }
+            ],
+            "collection": "birthday",
+            "img_url": "/products/birthday/galaxy_macaron.webp",
+            "description": "An out of this world cake with galaxy inspired macarons and a unique design, perfect for a space themed party. The galaxy effect on the macarons is very realistic and adds a touch of elegance to the cake. Perfectfor those who love unique and creative cakes. The macarons are made with high quality ingredients to ensure a delicious taste."
+        },
+        {
+            "id": 4,
+            "name": "Jungle Animal Themed",
+            "pricing": [
+                { "id": 0, "size": "S", "price": 1000 },
+                { "id": 1, "size": "M", "price": 1200 },
+                { "id": 2, "size": "L", "price": 1400 }
+            ],
+            "collection": "birthday",
+            "img_url": "/products/birthday/jungle_animal_themed.webp",
+            "description": "A jungle themed cake with fondant animals and a fun design, perfect for a safari or animal themed party. The fondant animals are very detailed and realistic, adding a touch of fun and playfulness to the cake. Perfect for children's birthday parties."
+        },
+        {
+            "id": 5,
+            "name": "Over The Rainbow",
+            "pricing": [
+                { "id": 0, "size": "S", "price": 1000 },
+                { "id": 1, "size": "M", "price": 1200 },
+                { "id": 2, "size": "L", "price": 1400 }
+            ],
+            "collection": "birthday",
+            "img_url": "/products/birthday/over_the_rainbow.webp",
+            "description": "A colorful and vibrant cake in the shape of a rainbow, perfect for a birthday party. The colors of the rainbow are very vivid and bold, making it a center of attraction. Perfect for those who love bright and bold colors."
+        },
+        {
+            "id": 6,
+            "name": "Red Velvety Drip",
+            "pricing": [
+                { "id": 0, "size": "S", "price": 1000 },
+                { "id": 1, "size": "M", "price": 1200 },
+                { "id": 2, "size": "L", "price": 1400 }
+            ],
+            "collection": "birthday",
+            "img_url": "/products/birthday/red_velvety_drip.webp",
+            "description": "A classic red velvet cake with cream cheese frosting and a velvety drip, perfect for a special occasion. The cream cheese frosting adds a tangy and creamy element to the cake. A perfect balance of flavors."
+        },
+        {
+            "id": 7,
+            "name": "Strawberries & Cream",
+            "pricing": [
+                { "id": 0, "size": "S", "price": 1000 },
+                { "id": 1, "size": "M", "price": 1200 },
+                { "id": 2, "size": "L", "price": 1400 }
+            ],
+            "collection": "birthday",
+            "img_url": "/products/birthday/strawberries_&_cream.webp",
+            "description": "A moist vanilla cake with fresh strawberries and whipped cream, perfect for a summer birthday celebration. The strawberry filling and frosting adds a natural sweetness and a touch of freshness to the cake. Perfect for those who love the taste of fresh strawberries."
+        },
+        {
+            "id": 8,
+            "name": "Superhero Themed",
+            "pricing": [
+                { "id": 0, "size": "S", "price": 1000 },
+                { "id": 1, "size": "M", "price": 1200 },
+                { "id": 2, "size": "L", "price": 1400 }
+            ],
+            "collection": "birthday",
+            "img_url": "/products/birthday/superhero_themed.webp",
+            "description": "A fun and playful superhero themed cake, perfect for a birthday party. The design is very detailed and realistic, adding a touch of fun and playfulness to the cake. Perfect for children's birthday parties."
+        },
+        {
+            "id": 9,
+            "name": "Vanilla Vanilla",
+            "pricing": [
+                { "id": 0, "size": "S", "price": 1000 },
+                { "id": 1, "size": "M", "price": 1200 },
+                { "id": 2, "size": "L", "price": 1400 }
+            ],
+            "collection": "birthday",
+            "img_url": "/products/birthday/vanilla_vanilla.webp",
+            "description": "A classic and simple vanilla cake , perfect for any birthday celebration. The vanilla flavor is rich and authentic, making it a crowd-pleaser. A perfect option for those who prefer a classic and timeless taste."
+        },
+        {
+            "id": 10,
+            "name": "Banana Bread & Caramel",
+            "pricing": [
+                { "id": 0, "size": "S", "price": 1000 },
+                { "id": 1, "size": "M", "price": 1200 },
+                { "id": 2, "size": "L", "price": 1400 }
+            ],
+            "collection": "traditional",
+            "img_url": "/products/traditional/banana_bread_&_caramel.webp",
+            "description": "Our Banana Bread & Caramel is a moist banana bread with a rich caramel glaze. The caramel is made with real butter which gives the bread a rich and delicious flavor. Perfect for breakfast or as a sweet snack. The banana bread is made with ripe bananas, ensuring a strong banana flavor."
+        },
+        {
+            "id": 11,
+            "name": "Black Forest Gateau",
+            "pricing": [
+                { "id": 0, "size": "S", "price": 1000 },
+                { "id": 1, "size": "M", "price": 1200 },
+                { "id": 2, "size": "L", "price": 1400 }
+            ],
+            "collection": "traditional",
+            "img_url": "/products/traditional/black_forest_gateau.webp",
+            "description": "Our Black Forest Gateau is a classic German chocolate cake with cherries and whipped cream. It is a perfect blend of rich chocolate and sweet cherries. The whipped cream adds a light and airy texture making it a irresistible treat for all. The cherries used in the cake are fresh, adding a touch of natural sweetness."
+        },
+        {
+            "id": 12,
+            "name": "Chocolate Duo",
+            "pricing": [
+                { "id": 0, "size": "S", "price": 1000 },
+                { "id": 1, "size": "M", "price": 1200 },
+                { "id": 2, "size": "L", "price": 1400 }
+            ],
+            "collection": "traditional",
+            "img_url": "/products/traditional/chocolate_duo.webp",
+            "description": "Our Chocolate Duo is a chocolate lover's dream with layers of dark and white chocolate. The dark chocolate adds a rich and intense flavor while the white chocolate gives a sweet and creamy taste. Perfect for all chocolate lovers. The chocolate used in the cake is of high quality, ensuring a rich and indulgent taste."
+        },
+        {
+            "id": 13,
+            "name": "Lemon Drizzle",
+            "pricing": [
+                { "id": 0, "size": "S", "price": 1000 },
+                { "id": 1, "size": "M", "price": 1200 },
+                { "id": 2, "size": "L", "price": 1400 }
+            ],
+            "collection": "traditional",
+            "img_url": "/products/traditional/lemon_drizzle.webp",
+            "description": "Our Lemon Drizzle is a tangy lemon cake with a sweet lemon glaze. The tanginess of the lemon is balanced by the sweetness of the glaze making it perfect for any time of the day. A great option for those who love a citrus flavor. The lemons used in the cake are fresh, ensuring a strong lemon flavor."
+        },
+        {
+            "id": 14,
+            "name": "Matcha",
+            "pricing": [
+                { "id": 0, "size": "S", "price": 1000 },
+                { "id": 1, "size": "M", "price": 1200 },
+                { "id": 2, "size": "L", "price": 1400 }
+            ],
+            "collection": "traditional",
+            "img_url": "/products/traditional/matcha.webp",
+            "description": "Our Matcha cake is a green tea flavored sponge cake with a smooth matcha butter cream, perfect for green tea lovers. The matcha powder used in the cake is high quality, ensuring a strong and authentic matcha flavor. Perfect for those who love the taste of green tea"
+        },
+        {
+            "id": 15,
+            "name": "Raspberry",
+            "pricing": [
+                { "id": 0, "size": "S", "price": 1000 },
+                { "id": 1, "size": "M", "price": 1200 },
+                { "id": 2, "size": "L", "price": 1400 }
+            ],
+            "collection": "traditional",
+            "img_url": "/products/traditional/raspberry.webp",
+            "description": "Our Raspberry cake is a moist sponge cake with a raspberry filling and icing. The raspberries used in the cake are fresh, adding a touch of natural sweetness. Perfect for those who love the taste of fresh raspberries."
+        },
+        {
+            "id": 16,
+            "name": "Red Velvet",
+            "pricing": [
+                { "id": 0, "size": "S", "price": 1000 },
+                { "id": 1, "size": "M", "price": 1200 },
+                { "id": 2, "size": "L", "price": 1400 }
+            ],
+            "collection": "traditional",
+            "img_url": "/products/traditional/red_velvet.webp",
+            "description": "Our Red Velvet cake is a classic red velvet cake with cream cheese icing. The cake is moist and fluffy, with a unique and subtle cocoa flavor. Perfect for those who love the classic taste of red velvet cake."
+        },
+        {
+            "id": 17,
+            "name": "Strawberry",
+            "pricing": [
+                { "id": 0, "size": "S", "price": 1000 },
+                { "id": 1, "size": "M", "price": 1200 },
+                { "id": 2, "size": "L", "price": 1400 }
+            ],
+            "collection": "traditional",
+            "img_url": "/products/traditional/strawberry.webp",
+            "description": "Our Strawberry cake is a moist sponge cake with a strawberry filling and icing. The strawberries used in the cake are fresh, adding a touch of natural sweetness. Perfect for those who love the taste of fresh strawberries."
+        },
+        {
+            "id": 18,
+            "name": "Victoria Sponge",
+            "pricing": [
+                { "id": 0, "size": "S", "price": 1000 },
+                { "id": 1, "size": "M", "price": 1200 },
+                { "id": 2, "size": "L", "price": 1400 }
+            ],
+            "collection": "traditional",
+            "img_url": "/products/traditional/victoria_sponge.webp",
+            "description": "Our Victoria Sponge cake is a classic sponge cake filled with jam and cream, named after Queen Victoria. The cake is light and fluffy, with a subtle vanilla flavor. Perfect for those who love the classic taste of a traditional Victoria Sponge cake."
+        }
+    ]
+}
