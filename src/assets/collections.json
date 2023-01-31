@@ -17,6 +17,18 @@
             "name": "Chocolate Cakes",
             "img_url": "/products/chocolate/chocolate_duo.webp",
             "description": "Satisfy your chocolate cravings with our mouthwatering chocolate cakes. From chocolate duo cakes to classic chocolate fudge cakes, our chocolate cakes are rich, decadent, and sure to please any chocolate lover. Our cakes are made with the highest quality cocoa powder and chocolate to ensure an intense chocolate flavor. We also offer a variety of chocolate cakes with different filling and frosting options to suit any preference. Whether it's a special occasion or just a treat for yourself, our chocolate cakes are sure to delight your taste buds."
+        },
+        {
+            "type": "fantasy",
+            "name": "Fantasy Cakes",
+            "img_url": "products/fantasy/double_rainbow.webp",
+            "description": "Bring your wildest cake fantasies to life with our magical collection of fantasy cakes. From unicorn cakes to enchanted forest cakes, our fantasy cakes are sure to amaze and delight both children and adults alike. We use only the finest ingredients and innovative techniques to create intricate and beautifully designed cakes that are as delicious as they are beautiful. Whether you're looking for a cake for a themed party or for a special celebration, our fantasy cakes are the perfect choice."
+        },
+        {
+            "type": "wedding",
+            "name": "Wedding Cakes",
+            "img_url": "products/wedding/bloom_naked.webp",
+            "description": "Make your special day even more memorable with our elegant collection of wedding cakes. From tiered wedding cakes to naked cakes, our wedding cakes are designed to suit any style and taste. We use only the finest ingredients and delicate techniques to create stunning and delicious cakes that will be the centerpiece of your wedding celebration. Whether you're looking for a simple and classic cake or a more elaborate and decorative design, our wedding cakes are the perfect choice for your big day."
         }
     ]
 }

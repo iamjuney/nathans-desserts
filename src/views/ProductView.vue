@@ -41,11 +41,17 @@ function refresh(id) {
 
 const now = new Date();
 let month = now.getMonth() + 1;
-let day = now.getDate() + 1;
+let day = now.getDate();
 if (month < 10) month = "0" + month;
 if (day < 10) day = "0" + day;
 const today = now.getFullYear() + "-" + month + "-" + day;
-const time = now.getHours() + ":" + now.getMinutes();
+
+let hours = now.getHours();
+hours = hours < 10 ? "0" + hours : hours;
+let minutes = now.getMinutes();
+minutes = minutes < 10 ? "0" + minutes : minutes;
+const time = hours + ":" + minutes;
+
 const options = [
     { id: 0, text: "National Delivery", icon: "ph:truck" },
     { id: 1, text: "Store Pickup", icon: "ph:storefront" },
@@ -75,8 +81,6 @@ const add = () => {
 
     addToCart(newItem);
 };
-
-console.log(pickupTime);
 </script>
 
 <template>
