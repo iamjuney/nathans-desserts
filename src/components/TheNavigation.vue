@@ -2,9 +2,12 @@
 import { Icon } from "@iconify/vue";
 import { storeToRefs } from "pinia";
 import { useCartStore } from "../stores/store";
+import { ref } from "vue";
 
 const store = useCartStore();
 const { count } = storeToRefs(store);
+
+const isMobile = ref(false);
 </script>
 
 <template>
@@ -14,7 +17,8 @@ const { count } = storeToRefs(store);
     Off-canvas menu for mobile, show/hide based on off-canvas menu state.
   -->
     <div
-        class="fixed inset-0 z-40 flex hidden lg:hidden"
+        v-show="isMobile"
+        class="fixed inset-0 z-40 flex lg:hidden"
         role="dialog"
         aria-modal="true"
     >
@@ -44,50 +48,28 @@ const { count } = storeToRefs(store);
         To: "-translate-x-full"
     -->
         <div
-            class="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl"
+            class="relative flex w-full max-w-xs flex-col overflow-y-auto bg-primary pb-12 shadow-xl"
         >
             <div class="flex px-4 pt-5 pb-2">
                 <button
+                    @click="isMobile = false"
                     type="button"
                     class="-m-2 inline-flex items-center justify-center rounded-md p-2 text-gray-400"
                 >
                     <span class="sr-only">Close menu</span>
                     <!-- Heroicon name: outline/x -->
-                    <svg
-                        class="h-6 w-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M6 18L18 6M6 6l12 12"
-                        />
-                    </svg>
+                    <Icon
+                        icon="ph:x"
+                        class="flex-shrink-0 text-gray-600 hover:text-gray-900"
+                        width="28"
+                        height="30"
+                    />
                 </button>
             </div>
 
             <!-- Links -->
             <div class="mt-2">
                 <!-- to be added -->
-            </div>
-
-            <div class="space-y-6 border-t border-gray-200 py-6 px-4">
-                <div class="flow-root">
-                    <a href="#" class="-m-2 block p-2 font-medium text-gray-900"
-                        >Company</a
-                    >
-                </div>
-
-                <div class="flow-root">
-                    <a href="#" class="-m-2 block p-2 font-medium text-gray-900"
-                        >Stores</a
-                    >
-                </div>
             </div>
 
             <div class="space-y-6 border-t border-gray-200 py-6 px-4">
@@ -159,26 +141,18 @@ const { count } = storeToRefs(store);
                     <div class="flex flex-1 items-center lg:hidden">
                         <!-- Mobile menu toggle, controls the 'mobileMenuOpen' state. -->
                         <button
+                            @click="isMobile = true"
                             type="button"
-                            class="-ml-2 rounded-md bg-white p-2 text-gray-600"
+                            class="-ml-2 rounded-md bg-primary p-2 text-gray-600"
                         >
                             <span class="sr-only">Open menu</span>
                             <!-- Heroicon name: outline/menu -->
-                            <svg
-                                class="h-6 w-6"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h16"
-                                />
-                            </svg>
+                            <Icon
+                                icon="ph:list"
+                                class="flex-shrink-0 text-gray-600 hover:text-gray-900"
+                                width="28"
+                                height="30"
+                            />
                         </button>
 
                         <!-- Search -->
@@ -188,33 +162,19 @@ const { count } = storeToRefs(store);
                         >
                             <span class="sr-only">Search</span>
                             <!-- Heroicon name: outline/search -->
-                            <svg
-                                class="h-6 w-6"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                                />
-                            </svg>
+                            <Icon
+                                icon="ph:magnifying-glass"
+                                class="flex-shrink-0 text-gray-600 hover:text-gray-900"
+                                width="28"
+                                height="30"
+                            />
                         </a>
                     </div>
-
-                    <!-- Logo (lg-) -->
-                    <a href="#" class="lg:hidden">
-                        <span class="sr-only">Workflow</span>
-                        <img
-                            src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
-                            alt=""
-                            class="h-8 w-auto"
-                        />
-                    </a>
+                    <RouterLink to="/" class="lg:hidden">
+                        <span class="sr-only">Nathan's Desserts</span>
+                        <!-- logo here -->
+                        <img class="h-12 w-auto" src="/logo.png" alt="" />
+                    </RouterLink>
 
                     <div class="flex flex-1 items-center justify-end">
                         <div class="flex items-center lg:ml-8">

@@ -89,7 +89,7 @@ const add = () => {
             <TheNavigation />
 
             <div
-                class="mx-auto max-w-2xl px-4 pb-16 sm:px-6 sm:pb-24 lg:mt-24 lg:max-w-6xl lg:px-8"
+                class="mx-auto mt-12 max-w-2xl px-4 pb-16 sm:px-6 sm:pb-24 lg:mt-24 lg:max-w-6xl lg:px-8"
             >
                 <div
                     class="lg:grid lg:auto-rows-min lg:grid-cols-12 lg:gap-x-8"
