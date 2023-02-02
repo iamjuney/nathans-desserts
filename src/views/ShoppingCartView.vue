@@ -7,18 +7,23 @@ import { Icon } from "@iconify/vue";
 import TheNavigation from "../components/TheNavigation.vue";
 import TheFooter from "../components/TheFooter.vue";
 
+// when the page initially loads, the window position will reset to top
 onMounted(() => {
     window.scrollTo(0, 0);
 });
 
-const store = useCartStore();
-const { cart, count } = storeToRefs(store);
-const { remove } = store;
+const store = useCartStore(); // function call to use the useCartStore from the stores.js in stores folder
+const { cart, count } = storeToRefs(store); // indicates that we will use the cart and count variables from the store
+const { remove } = store; // indicates that we will use the remove function from the store
 
-const sum = ref(0);
-const sumOfPrices = cart.value.forEach((price) => {
+const sum = ref(0); // sum variable for all the expenses
+
+// increases sum for each prices of cakes in the cart
+cart.value.forEach((price) => {
     sum.value += price.price;
 });
+
+// tax variable
 const tax = ref(sum.value * 0.03);
 </script>
 

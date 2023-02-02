@@ -9,54 +9,73 @@ import TheNavigation from "../components/TheNavigation.vue";
 import TheFooter from "../components/TheFooter.vue";
 import cakesData from "../assets/cakes.json";
 
-const store = useCartStore();
-const { addToCart } = store;
+const store = useCartStore(); // function call to use the useCartStore from the stores.js in stores folder
+const { addToCart } = store; // indicates that we will use the addToCart function from the store
 
 let cake, shuffled, suggestion_cakes;
-const route = useRoute();
 
+// check the current url and get the parameters from the router (ex. /:type/:id)
+const route = useRoute().params;
+
+// when the page initially loads
 onMounted(() => {
-    window.scrollTo(0, 0);
-    refresh(route.params.id);
+    window.scrollTo(0, 0); // the window position will reset to top
+    refresh(route.id); // calls the refresh() function with an id from the route
 });
 
+// watches for changes in the page
 watch(
-    () => route.params.id,
+    () => route.id, // if the route.id has change
     async (newId) => {
+        // refreshes the page with newId from the url
         window.scrollTo(0, 0);
         refresh(newId);
     },
     {
-        immediate: true,
+        immediate: true, // indicates that when changes are found, refreshes immeadiately
     }
 );
 
+// function to refresh the cake data to be showed in the page
 function refresh(id) {
-    cake = cakesData.data.find((cake) => cake.id == parseInt(id)); //find cake from list with id
+    // for current cake
+    cake = cakesData.data.find((cake) => cake.id == parseInt(id)); // find cake along with its details from json with id
 
-    shuffled = cakesData.data.sort(() => 0.5 - Math.random()); //shuffle cakes list
-    shuffled = shuffled.filter((cake) => cake.id !== parseInt(id)); //remove the current cake
-    suggestion_cakes = shuffled.slice(0, 4); //cut the list into only 4 cakes
+    // for suggested cakes
+    shuffled = cakesData.data.sort(() => 0.5 - Math.random()); // shuffle cakes list
+    shuffled = shuffled.filter((cake) => cake.id !== parseInt(id)); // remove the current cake
+    suggestion_cakes = shuffled.slice(0, 4); // cut the list into only 4 cakes (since suggestions only has 4 cakes)
 }
 
+/// Pickup Date & Time default values
+
+// uses the Date function (a native function in javascript to get current date)
 const now = new Date();
-let month = now.getMonth() + 1;
-let day = now.getDate();
-if (month < 10) month = "0" + month;
-if (day < 10) day = "0" + day;
-const today = now.getFullYear() + "-" + month + "-" + day;
+
+let month = now.getMonth() + 1; // get month from now variable (naay + 1 kay nag start ang pag count sa month sa 0)
+let day = now.getDate(); // get day from now
+
+if (month < 10) month = "0" + month; // if month is less than 10, add 0 in front (ex. 09, 08)
+if (day < 10) day = "0" + day; // if day is less than 10, add 0 in front (ex. 09, 08)
 
 let hours = now.getHours();
-hours = hours < 10 ? "0" + hours : hours;
 let minutes = now.getMinutes();
-minutes = minutes < 10 ? "0" + minutes : minutes;
-const time = hours + ":" + minutes;
 
+hours = hours < 10 ? "0" + hours : hours;
+minutes = minutes < 10 ? "0" + minutes : minutes;
+
+const today = now.getFullYear() + "-" + month + "-" + day; // concatenates date with the format (YYYY-MM-DD)
+const time = hours + ":" + minutes; // concatenates time with the format (HH:MM)
+
+///
+
+// options to be used in type of delivery method
 const options = [
     { id: 0, text: "National Delivery", icon: "ph:truck" },
     { id: 1, text: "Store Pickup", icon: "ph:storefront" },
 ];
 
+// variables for the different choices of the user
 const sizeSelected = ref(0);
 const quantity = ref(1);
 const pickupDate = ref(today);
@@ -64,7 +83,9 @@ const pickupTime = ref(time);
 const message = ref("");
 const deliveryOption = ref(0);
 
-const add = () => {
+// function to add items on the shopping cart
+function add() {
+    // create new item with all the details to be added in the Cart Store
     let newItem = {
         id: Math.floor(Math.random() * 10001),
         name: cake.name,
@@ -79,8 +100,9 @@ const add = () => {
         delivery: deliveryOption.value,
     };
 
+    // uses the addToCart function the store.js or stores
     addToCart(newItem);
-};
+}
 </script>
 
 <template>

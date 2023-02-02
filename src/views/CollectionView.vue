@@ -8,18 +8,21 @@ import { onMounted } from "vue";
 import cakesData from "../assets/cakes.json";
 import collectionsData from "../assets/collections.json";
 
+// when the page initially loads, the window position will reset to top
 onMounted(() => {
     window.scrollTo(0, 0);
 });
 
-const route = useRoute();
+// check the current url and get the parameters from the router (ex. /:type)
+const type = useRoute().params.type;
+
+// finds the collection from the collectionsData (collections.json) which collection.type is equals to the type variable (ex. birthday)
 const collection = collectionsData.data.find(
-    (collection) => collection.type === route.params.type
+    (collection) => collection.type === type
 );
 
-const cakes = cakesData.data.filter(
-    (cake) => cake.collection === route.params.type
-);
+// filters or gets all the cakes from the cakesData (cakes.json) which collection.type is equals to the type variable (ex. birthday)
+const cakes = cakesData.data.filter((cake) => cake.collection === type);
 </script>
 
 <template>

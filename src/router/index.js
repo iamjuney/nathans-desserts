@@ -10,7 +10,7 @@ const router = createRouter({
             component: HomeView,
         },
         {
-            path: "/:type",
+            path: "/:type", //url parameters that can be retrieve using useRoute() function (ex. params.type)
             name: "collection",
             // route level code-splitting
             // this generates a separate chunk (About.[hash].js) for this route
@@ -18,7 +18,7 @@ const router = createRouter({
             component: () => import("../views/CollectionView.vue"),
         },
         {
-            path: "/:type/:id",
+            path: "/:type/:id", //url parameters that can be retrieve using useRoute() function (ex. params.type, params.id)
             name: "product",
             // route level code-splitting
             // this generates a separate chunk (About.[hash].js) for this route

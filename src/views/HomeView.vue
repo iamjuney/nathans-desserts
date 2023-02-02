@@ -4,6 +4,7 @@ import TheFooter from "../components/TheFooter.vue";
 import TheNavigation from "../components/TheNavigation.vue";
 import collectionsData from "../assets/collections.json";
 
+// gets all the data from the collectionsData (collections.json)
 const collections = collectionsData.data;
 </script>
 
