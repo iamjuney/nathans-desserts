@@ -14,7 +14,6 @@ export const useCartStore = defineStore("cart", () => {
     function remove(id) {
         cart.value = cart.value.filter((cake) => cake.id !== id);
         count.value--;
-        // window.location.reload();
     }
 
     return { count, cart, addToCart, remove };
